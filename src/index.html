@@ -9,15 +9,16 @@
 <body class="bg-slate-400 flex flex-col justify-center items-center">
     <h1 class="font-extrabold text-[max(2rem,4vmax)]">Etch A Sketch</h1>
     <label for="gridSqureNum">Change grid squares per sides:</label>
-    <input class="py-1 px-2" id="gridNumInput" type="number" placeholder="Enter number between 1 and 100:"/>
-    <button class="mt-2 bg-sky-700 text-[#0e0303] text-[min(2.5vw,16px)] text-center">Change</button>
+    <input class="py-1 pl-2 text-xs w-[13rem]" id="gridNumInput" type="number" placeholder="Enter number between 1 and 100"/>
+    <button id="changeText" class="mt-2 text-[whitesmoke] bg-sky-700 text-[min(2.5vw,16px)] text-center">Change</button>
     <div class="my-2 flex place-content-center place-items-center flex-wrap text-[whitesmoke] text-[min(2.5vw,16px)] text-center">
-        <button class="bg-sky-700">Randomize</button>
-        <button class="bg-sky-700">Reset</button>
-        <button class="bg-sky-700">Color</button>
+        <button id="randomText" class="bg-sky-700">Randomize</button>
+        <button id="clearText" class="bg-sky-700">clear</button>
+        <button id="resetText" class="bg-sky-700">Reset</button>
+        <button id="colorText" class="bg-sky-700">Color</button>
         <input class="ml-1" type="color" id="color"/>
     </div>
-    <div class="mb-3" id="container"></div>
+    <div class="mb-3 w-[min(90%,40em)] h-[35em] bg-white" id="container"></div>
     <script src="script.js"></script>
 </body>
 </html>
