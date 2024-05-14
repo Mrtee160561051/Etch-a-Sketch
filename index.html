@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; url=https://repo.github.io/src/index.html">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/output.css"/>
+</head>
+<body class="bg-slate-400 flex flex-col justify-center items-center">
+    <h1 class="font-extrabold text-[max(2rem,4vmax)]">Etch A Sketch</h1>
+    <label for="gridSqureNum">Change grid squares per sides:</label>
+    <input class="py-1 pl-2 text-xs w-[13rem]" id="gridNumInput" type="number" placeholder="Enter number between 1 and 100"/>
+    <button id="changeText" class="mt-2 text-[whitesmoke] bg-sky-700 text-[min(2.5vw,16px)] text-center">Change</button>
+    <div class="my-2 flex place-content-center place-items-center flex-wrap text-[whitesmoke] text-[min(2.5vw,16px)] text-center">
+        <button id="randomBtn" class="bg-sky-700">Randomize</button>
+        <button id="clearBtn" class="bg-sky-700">clear</button>
+        <button id="resetBtn" class="bg-sky-700">Reset</button>
+        <button id="colorBtn" class="bg-sky-700">Color</button>
+        <input class="ml-1" type="color" id="colorInput"/>
+    </div>
+    <div class="mb-3 w-[min(90%,40em)] h-[35em] bg-white" id="container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
