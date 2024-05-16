@@ -21,10 +21,35 @@
             content-visibility: auto;
           }
         }
+          button{
+              border-width: 4px;
+              border-style: inset;
+              border-color: light-dark(rgb(3, 97, 238),rgb(1, 44, 100));
+              margin: 5px;
+              width:min(19vw, 6rem);
+              
+          }
+
+          button:hover,button:focus-visible{
+              color: rgb(14, 13, 13);
+          }
+          button:active {
+              border-color: light-dark(rgb(2, 55, 124),rgb(3, 97, 238))
+            }
+          .cell{
+              width:100%;
+              background-color: whitesmoke;
+              border-width:1px;
+          }
+
+          .row{
+              display: flex;
+              
+          }
       </style>
       <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="../src/input.css"/>
+    
 </head>
 <body class="bg-slate-400 flex flex-col justify-center items-center">
     <h1 class="font-extrabold text-[max(2rem,4vmax)]">Etch A Sketch</h1>
