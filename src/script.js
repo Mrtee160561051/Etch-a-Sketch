@@ -75,7 +75,5 @@ container.innerHTML =
         })
     })
 }   
-updateGrid(16)
-
-   
+updateGrid(16);
 
